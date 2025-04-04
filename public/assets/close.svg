@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.76 18.03">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #080d0f;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M17.01.75L.75,17.01"/>
+  <path class="cls-1" d="M17.01,17.28L.75,1.01"/>
+</svg>

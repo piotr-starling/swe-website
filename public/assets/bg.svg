@@ -1,0 +1,20 @@
+<svg width="1491" height="1433" viewBox="0 0 1491 1433" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.7" filter="url(#filter0_f_140_453)">
+<path d="M1004.82 467.398C1026.15 494.657 1002.79 588.491 1038.34 647.727C1073.89 707.488 1168.86 733.174 1173.94 762.006C1179.02 790.838 1094.21 822.291 1058.15 881.003C1022.09 939.714 1034.79 1025.69 1007.87 1062.9C981.463 1100.12 915.95 1088.59 863.641 1064.48C811.333 1039.84 773.244 1002.62 724.49 978.506C582.192 803.34 592.333 1107.7 565.417 1073.62C201.675 1250.92 336.898 829.849 362.798 787.388C388.191 744.927 680.913 817.048 695.641 762.006C710.876 706.964 383.647 343.682 406.5 317.471C429.354 291.261 787.478 678.546 851.467 674.353C915.456 669.635 983.494 440.139 1004.82 467.398Z" fill="#49FFD7" fill-opacity="0.6"/>
+</g>
+<g style="mix-blend-mode:screen" filter="url(#filter1_f_140_453)">
+<path d="M487.121 798.985C503.935 816.01 577.019 846.019 615.254 879.822C653.877 913.832 657.96 951.993 678.49 964.835C699.02 977.676 735.611 964.993 784.707 977.435C833.804 989.878 895.406 1027.45 927.167 1034.14C958.849 1040.97 960.609 1017.08 950.989 992.144C940.98 966.999 919.431 941.106 909.252 917.217C802.028 806.274 1025.58 928.993 1004.6 907.637C1192.9 869.921 860.172 744.235 824.693 735.184C789.293 725.983 796.66 840.832 753.628 823.531C710.517 806.381 493.187 566.806 470.208 563.248C447.228 559.689 677.462 817.833 664.307 835.088C650.765 852.136 470.307 781.961 487.121 798.985Z" fill="white" fill-opacity="0.6"/>
+</g>
+<defs>
+<filter id="filter0_f_140_453" x="0.843872" y="0.198242" width="1489.31" height="1432.78" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="158" result="effect1_foregroundBlur_140_453"/>
+</filter>
+<filter id="filter1_f_140_453" x="328.594" y="423.211" width="873.351" height="752.11" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="70" result="effect1_foregroundBlur_140_453"/>
+</filter>
+</defs>
+</svg>

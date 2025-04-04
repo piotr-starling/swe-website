@@ -1,11 +1,299 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// Astro will bundle and optimize this CSS for you automatically
+// This also works for preprocessor files like .scss, .styl, etc.
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/main.css";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<MainLayout title="Home Page">
+  <section id="hero">
+    <img src="assets/bg_estimate.svg" alt="bg" class="bg-estimate" />
+    <div class="container d-column">
+      <span class="section-subtitle">Our mission</span>
+      <h1>Expert engineering.</h1>
+      <div class="d-flex container-full d-row g-150">
+        <div class="column a-start">
+          <h2 class="hero-subtitle">Simplified.</h2>
+        </div>
+        <div class="column">
+          <p>
+            SBSE simplifies the complex process of sourcing, hiring, and
+            managing remote software engineers, providing a <strong
+              >seamless solution for accessing top talent without any hassle.</strong
+            >
+          </p>
+          <a class="cta"><span>Get Estimate →</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="technologies">
+    <div class="container d-column">
+      <span class="section-subtitle">Technologies we use daily</span>
+      <div class="tech-icons">
+        <img src="assets/aws.svg" alt="AWS" />
+        <img src="assets/ts.svg" alt="TypeScript" />
+        <img src="assets/kubernetes.svg" alt="Kubernetes" />
+        <img src="assets/next.svg" alt="Next.js" />
+        <img src="assets/react.svg" alt="React" />
+        <img src="assets/serverless.svg" alt="Serverless" />
+        <img src="assets/node.svg" alt="Node.js" />
+      </div>
+    </div>
+  </section>
+  <section id="whatWeDo">
+    <img src="assets/bg.svg" class="image-bg" alt="bg" />
+    <div class="container d-column">
+      <span class="section-subtitle">What we do</span>
+      <h2 class="section-title">Featured services</h2>
+      <p>
+        Discover our range of top-tier services tailored to meet your specific
+        needs. Our team of experts is dedicated to delivering excellence in
+        every aspect, ensuring you receive the highest quality solutions.
+      </p>
+      <div class="d-flex container-full d-row g-32 mt-50">
+        <div class="column service-box">
+          <div class="icon-box">
+            <img src="assets/users.svg" alt="Users" />
+          </div>
+          <h3>Work through client needs</h3>
+          <p>
+            We take the time to thoroughly understand your unique requirements,
+            ensuring a tailored approach to your staffing needs.
+          </p>
+        </div>
+        <div class="column service-box">
+          <div class="icon-box">
+            <img src="assets/adduser.svg" alt="User" />
+          </div>
+          <h3>Send across vetted candidates</h3>
+          <p>
+            We present you with a carefully curated selection of top-tier
+            candidates, saving you time and effort. Quality is our standard.
+          </p>
+        </div>
+        <div class="column service-box">
+          <div class="icon-box">
+            <img src="assets/rotate.svg" alt="Rotate" />
+          </div>
+          <h3>Candidate approval by the client</h3>
+          <p>
+            Your opinion matters. We respect your choices and will proceed only
+            with the candidates who align perfectly with your expectations.
+          </p>
+        </div>
+        <div class="column service-box">
+          <div class="icon-box">
+            <img src="assets/brain.svg" alt="Brain" />
+          </div>
+          <h3>Reiterate until the team is complete</h3>
+          <p>
+            Our commitment to your satisfaction knows no bounds. We'll persist
+            until your team is fully staffed with the right individuals for the
+            job.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="process">
+    <div class="container d-column">
+      <span class="section-subtitle">Process</span>
+      <h2 class="section-title">How it works</h2>
+      <p>
+        We've simplified the process to make your experience seamless. Discover
+        the steps that lead to your success with us.
+      </p>
+      <div class="d-flex container-full d-row mt-50 process-step">
+        <div class="column">
+          <div class="number-box"><span>01</span></div>
+        </div>
+        <div class="column">
+          <h3>Work through client needs</h3>
+        </div>
+        <div class="column">
+          <p>
+            Our dedicated team takes the time to work closely with you, delving
+            deep into your organization's specific needs and objectives. We
+            believe that by understanding your unique requirements, we can craft
+            a tailor-made solution that perfectly aligns with your goals.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex container-full d-row mt-50 process-step">
+        <div class="column">
+          <div class="number-box"><span>02</span></div>
+        </div>
+        <div class="column">
+          <h3>Send across vetted candidates</h3>
+        </div>
+        <div class="column">
+          <p>
+            We go the extra mile to ensure that the candidates we send to you
+            are more than just resumes; they are the embodiment of quality and
+            excellence. Through a meticulous vetting process, we identify and
+            present you with candidates who not only meet your job requirements
+            but also embody your company's values and culture.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex container-full d-row mt-50 process-step">
+        <div class="column">
+          <div class="number-box"><span>03</span></div>
+        </div>
+        <div class="column">
+          <h3>Candidate approval by the client</h3>
+        </div>
+        <div class="column">
+          <p>
+            At every step of the way, your input and preferences are highly
+            valued. Once we've introduced you to potential candidates, your
+            approval becomes the pivotal point of the process. We respect your
+            expertise and insight, and we will proceed only with the candidates
+            who resonate with your expectations.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex container-full d-row mt-50 process-step">
+        <div class="column">
+          <div class="number-box"><span>04</span></div>
+        </div>
+        <div class="column">
+          <h3>Reiterate until the team is complete</h3>
+        </div>
+        <div class="column">
+          <p>
+            Our commitment to your success is unwavering. We understand that
+            building a cohesive team is a critical component of your
+            organizational triumph. Therefore, we'll continue the process,
+            fine-tuning our search and recommendations, until your team is not
+            just complete but perfectly aligned with your requirements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="why">
+    <div class="container d-column">
+      <span class="section-subtitle">The “Why”</span>
+      <h2 class="section-title">Our core <span>value proposition</span></h2>
+      <p>
+        SBSE transforms startup growth by simplifying the process of building
+        high-performing remote engineering teams. Our expert sourcing,
+        management, and support ensure exceptional results. We understand the
+        unique challenges startups face and provide a strategic partnership to
+        drive success, letting you concentrate on your core business while we
+        handle the rest.
+      </p>
+      <img src="assets/laptop.jpg" alt="Laptop" />
+    </div>
+  </section>
+  <section id="legacy">
+    <img src="assets/bg-why.svg" alt="bg" class="bg-why" />
+    <div class="container d-column">
+      <span class="section-subtitle">Our legacy</span>
+      <h2 class="section-title">Why choose SBSE?</h2>
+      <p>
+        We've simplified the process to make your experience seamless. Discover
+        the steps that lead to your success with us.
+      </p>
+      <div class="d-flex container-full d-row g-32 mt-50">
+        <div class="column">
+          <div class="legacy-number">01</div>
+          <h3>Scalable and flexible</h3>
+          <p>
+            SBSE provides expert cloud engineers for seamless remote team setup
+            and expansion, ensuring businesses access top talent and stay at the
+            tech forefront.
+          </p>
+        </div>
+        <div class="column">
+          <div class="legacy-number">02</div>
+          <h3>SExpert engineering — simplified</h3>
+          <p>
+            SBSE simplifies the hiring and management of remote software
+            engineers, making top talent accessible for startups without the
+            hassle.
+          </p>
+        </div>
+        <div class="column">
+          <div class="legacy-number">03</div>
+          <h3>Engineering by engineers</h3>
+          <p>
+            SBSE fosters a supportive and collaborative community, guiding our
+            engineers at every step to consistently deliver exceptional results
+            for our clients.
+          </p>
+        </div>
+        <div class="column">
+          <div class="legacy-number">04</div>
+          <h3>Open, supportive culture</h3>
+          <p>
+            sbse promotes a healthy, open culture that encourages collaboration,
+            communication, and respect. Fostering a positive and supportive work
+            environment for all team members.
+          </p>
+        </div>
+        <div class="column">
+          <div class="legacy-number">05</div>
+          <h3>Innovation</h3>
+          <p>
+            The company encourages and fosters an environment of continuous
+            innovation and learning.Which allows it to stay ahead of the curve
+            and adapt to new trends and technologies.
+          </p>
+        </div>
+        <div class="column">
+          <div class="legacy-number">06</div>
+          <h3>Customer focus</h3>
+          <p>
+            The company places a high priority on delivering value to its
+            customers and is committed to.Understanding and addressing their
+            needs.
+          </p>
+        </div>
+        <div class="column">
+          <div class="legacy-number">07</div>
+          <h3>Diversity and inlusion</h3>
+          <p>
+            The company places a high priority on delivering value to its
+            customers and is committed to.Understanding and addressing their
+            needs.
+          </p>
+        </div>
+        <div class="column"></div>
+      </div>
+    </div>
+  </section>
+  <section id="aboutUs">
+    <img src="assets/bg-about.svg" alt="bg" class="bg-about" />
+    <div class="container d-column">
+      <span class="section-subtitle">About Us</span>
+      <h2 class="section-title">
+        SBSE™ is a software engineering consultancy that helps startups and
+        businesses build and scale their software products.
+      </h2>
+      <p>
+        They provide top engineering talent and expertise in cloud-based and
+        cross-platform technologies to help their clients deliver high-quality
+        software products to market faster. SBSE also offers end-to-end software
+        development services, from design to development to deployment and
+        scaling, to help
+      </p>
+    </div>
+    <!--<img src="assets/bg.svg" class="image-bg" alt="bg">-->
+  </section>
+  <section id="careers">
+    <div class="container d-column">
+      <span class="section-subtitle">Careers</span>
+      <h2 class="section-title">We are hiring!</h2>
+      <p>
+        Are you ready to become a part of something extraordinary? At SBSE,
+        we're on a mission to revolutionize how startups build and scale
+        high-performing remote engineering teams. And we're looking for talented
+        individuals who share our passion and vision to join our dynamic team.
+      </p>
+      <a class="cta"><span>See open positions →</span></a>
+    </div>
+  </section>
+</MainLayout>
