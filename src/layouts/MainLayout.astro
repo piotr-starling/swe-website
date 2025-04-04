@@ -29,12 +29,12 @@ const { title = "SWE" } = Astro.props;
         <div class="header-green"></div>
         <!--<img src="assets/green-item.png" alt="green-item" class="green-item" />-->
         <div class="header-box">
-          <img src="assets/logo.svg" alt="logo" class="logo" />
+          <a href="/"><img src="assets/logo.svg" alt="logo" class="logo" /></a>
           <div class="header-menu-box">
             <ul class="menu-desktop">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li><a href="/about">About us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/contact">Contact us</a></li>
             </ul>
             <div>
               <a class="cta"><span>Get Estimate →</span></a>
@@ -43,13 +43,13 @@ const { title = "SWE" } = Astro.props;
           </div>
           <div class="mobile-menu-box">
             <div class="mobile-menu-box-header">
-              <img src="assets/logo_black.svg" alt="logo" class="logo" />
+              <a href="/"><img src="assets/logo_black.svg" alt="logo" class="logo" /></a>
               <img src="assets/close.svg" alt="close" class="close" />
             </div>
             <ul class="mobile-menu">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li><a href="/about">About us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/contact">Contact us</a></li>
             </ul>
             <ul class="mobile-social">
               <li><a href="#">Linkedin</a></li>
@@ -89,7 +89,7 @@ const { title = "SWE" } = Astro.props;
       <footer>
         <div class="container d-row">
           <div class="footer-logo-box">
-            <img src="assets/logo.svg" alt="logo" class="logo" />
+            <a href="/"><img src="assets/logo.svg" alt="logo" class="logo" /></a>
             <span
               >Let us <b>simplify your journey</b> to success in the digital realm
               with expert guidance.</span
@@ -98,19 +98,19 @@ const { title = "SWE" } = Astro.props;
           <div class="footer-menu-primary-box">
             <h4>SBSE</h4>
             <ul>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Featured services</a></li>
+              <li><a href="/about">About us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/contact">Contact us</a></li>
+              <li><a href="/#whatWeDo">Featured services</a></li>
             </ul>
           </div>
           <div class="footer-menu-primary-box">
             <h4>How we work</h4>
             <ul>
-              <li><a href="#">Value proposition</a></li>
-              <li><a href="#">Why choose SBSE?</a></li>
-              <li><a href="#">Stay connected</a></li>
-              <li><a href="#">Careers</a></li>
+              <li><a href="/#why">Value proposition</a></li>
+              <li><a href="/#legacy">Why choose SBSE?</a></li>
+              <li><a href="/#newsletter">Stay connected</a></li>
+              <li><a href="/#careers">Careers</a></li>
             </ul>
           </div>
           <div class="footer-icons-box">

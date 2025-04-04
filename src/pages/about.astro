@@ -1,0 +1,247 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/main.css";
+---
+
+<MainLayout title="About Us">
+  <section id="about-hero">
+    <img src="assets/bg_estimate.svg" alt="bg" class="bg-estimate" />
+    <div class="container d-column">
+      <span class="section-subtitle">About Us</span>
+      <h1>Building the future of software engineering.</h1>
+      <div class="d-flex container-full d-row g-150">
+        <div class="column a-start">
+          <h2 class="hero-subtitle">Together.</h2>
+        </div>
+        <div class="column">
+          <p>
+            At SBSE, we're more than just a software engineering consultancy. We're a team of passionate innovators dedicated to <strong>transforming how businesses build and scale their software products</strong>.
+          </p>
+          <a class="cta"><span>Join Our Team →</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mission">
+    <div class="container d-column">
+      <span class="section-subtitle">Our Mission</span>
+      <h2 class="section-title">Empowering Innovation Through Engineering Excellence</h2>
+      <p>
+        Our mission is to bridge the gap between exceptional talent and innovative companies, creating lasting partnerships that drive technological advancement and business success.
+      </p>
+      <div class="d-flex container-full d-row g-32 mt-50">
+        <div class="column service-box">
+          <div class="icon-box">
+            <img src="assets/users.svg" alt="Team" />
+          </div>
+          <h3>Expert Team</h3>
+          <p>
+            Our engineers are carefully selected professionals with proven track records in delivering cutting-edge solutions.
+          </p>
+        </div>
+        <div class="column service-box">
+          <div class="icon-box">
+            <img src="assets/brain.svg" alt="Innovation" />
+          </div>
+          <h3>Innovation Focus</h3>
+          <p>
+            We stay at the forefront of technology, embracing new tools and methodologies to deliver the best solutions.
+          </p>
+        </div>
+        <div class="column service-box">
+          <div class="icon-box">
+            <img src="assets/rotate.svg" alt="Process" />
+          </div>
+          <h3>Proven Process</h3>
+          <p>
+            Our streamlined workflow ensures efficient delivery while maintaining the highest quality standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <img src="assets/bg-about.svg" alt="bg" class="bg-about" />
+    <div class="container d-column">
+      <span class="section-subtitle">Our Team</span>
+      <h2 class="section-title">Meet the Experts Behind SBSE</h2>
+      <p>
+        Our team consists of passionate professionals who bring diverse experiences and perspectives to every project. Together, we're building the future of software engineering.
+      </p>
+      <div class="d-flex container-full d-row g-32 mt-50">
+        <div class="team-member">
+          <div class="image-container">
+            <img src="assets/team/sarah.jpg" alt="Sarah Johnson" />
+          </div>
+          <h3>Sarah Johnson</h3>
+          <span class="role">Chief Technology Officer</span>
+          <p>Former AWS architect with 15+ years of experience in cloud infrastructure and distributed systems.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><img src="assets/linkedin-dark.svg" alt="LinkedIn" /></a>
+            <a href="#" aria-label="Twitter"><img src="assets/twitter-dark.svg" alt="Twitter" /></a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="image-container">
+            <img src="assets/team/michael.jpg" alt="Michael Chen" />
+          </div>
+          <h3>Michael Chen</h3>
+          <span class="role">Lead Software Architect</span>
+          <p>Specialized in scalable architectures and microservices. Previously led engineering teams at major tech companies.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><img src="assets/linkedin-dark.svg" alt="LinkedIn" /></a>
+            <a href="#" aria-label="Twitter"><img src="assets/twitter-dark.svg" alt="Twitter" /></a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="image-container">
+            <img src="assets/team/alex.jpg" alt="Alex Rodriguez" />
+          </div>
+          <h3>Alex Rodriguez</h3>
+          <span class="role">Head of Engineering</span>
+          <p>Full-stack expert with a passion for developer experience and team mentorship.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><img src="assets/linkedin-dark.svg" alt="LinkedIn" /></a>
+            <a href="#" aria-label="Twitter"><img src="assets/twitter-dark.svg" alt="Twitter" /></a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <div class="image-container">
+            <img src="assets/team/emily.jpg" alt="Emily Taylor" />
+          </div>
+          <h3>Emily Taylor</h3>
+          <span class="role">Technical Lead</span>
+          <p>DevOps specialist focusing on automation and continuous deployment strategies.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><img src="assets/linkedin-dark.svg" alt="LinkedIn" /></a>
+            <a href="#" aria-label="Twitter"><img src="assets/twitter-dark.svg" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join-us">
+    <div class="container d-column">
+      <span class="section-subtitle">Join Our Team</span>
+      <h2 class="section-title">Build Your Career With Us</h2>
+      <p>
+        We're always looking for talented individuals who share our passion for excellence and innovation. Join us in shaping the future of software engineering.
+      </p>
+      <a class="cta"><span>View Open Positions →</span></a>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  /* Add any additional styles specific to the About page */
+  #about-hero {
+    padding-top: 100px;
+    position: relative;
+  }
+
+  #mission {
+    padding: 100px 0;
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  #team {
+    padding: 100px 0;
+    position: relative;
+  }
+
+  #join-us {
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  }
+
+  #join-us .cta {
+    margin-top: 40px;
+  }
+
+  .team-member {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .team-member:hover {
+    transform: translateY(-5px);
+  }
+
+  .team-member .image-container {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .team-member h3 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 0 8px;
+  }
+
+  .team-member .role {
+    color: #49FFD7;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .team-member p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .social-links a {
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+  }
+
+  .social-links a:hover {
+    opacity: 1;
+  }
+
+  @media (max-width: 1024px) {
+    .d-flex.container-full {
+      flex-wrap: wrap;
+    }
+
+    .team-member {
+      flex: 1 1 calc(50% - 16px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .team-member {
+      flex: 1 1 100%;
+    }
+  }
+</style> 
