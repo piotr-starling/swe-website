@@ -1,5 +1,6 @@
 ---
-import '../styles/main.css';
+import "../styles/global.css";
+import "../styles/main.css";
 
 interface Props {
   title?: string;
@@ -20,7 +21,6 @@ const { title = "SWE" } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
@@ -43,7 +43,9 @@ const { title = "SWE" } = Astro.props;
           </div>
           <div class="mobile-menu-box">
             <div class="mobile-menu-box-header">
-              <a href="/"><img src="assets/logo_black.svg" alt="logo" class="logo" /></a>
+              <a href="/"
+                ><img src="assets/logo_black.svg" alt="logo" class="logo" /></a
+              >
               <img src="assets/close.svg" alt="close" class="close" />
             </div>
             <ul class="mobile-menu">
@@ -89,7 +91,8 @@ const { title = "SWE" } = Astro.props;
       <footer>
         <div class="container d-row">
           <div class="footer-logo-box">
-            <a href="/"><img src="assets/logo.svg" alt="logo" class="logo" /></a>
+            <a href="/"><img src="assets/logo.svg" alt="logo" class="logo" /></a
+            >
             <span
               >Let us <b>simplify your journey</b> to success in the digital realm
               with expert guidance.</span

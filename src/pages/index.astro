@@ -1,6 +1,7 @@
 ---
 // Astro will bundle and optimize this CSS for you automatically
 // This also works for preprocessor files like .scss, .styl, etc.
+import { BoxReveal } from "../components/magicui/box-reveal";
 import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/main.css";
 ---
@@ -10,7 +11,9 @@ import "../styles/main.css";
     <img src="assets/bg_estimate.svg" alt="bg" class="bg-estimate" />
     <div class="container d-column">
       <span class="section-subtitle">Our mission</span>
-      <h1>Expert engineering.</h1>
+      <BoxReveal boxColor={"oklch(0.13 0.028 261.692)"} duration={0.5} client:load>
+        <h1>Expert engineering.</h1>
+      </BoxReveal>
       <div class="d-flex container-full d-row g-150">
         <div class="column a-start">
           <h2 class="hero-subtitle">Simplified.</h2>
@@ -175,7 +178,7 @@ import "../styles/main.css";
   </section>
   <section id="why">
     <div class="container d-column">
-      <span class="section-subtitle">The “Why”</span>
+      <span class="section-subtitle">The "Why"</span>
       <h2 class="section-title">Our core <span>value proposition</span></h2>
       <p>
         SBSE transforms startup growth by simplifying the process of building
