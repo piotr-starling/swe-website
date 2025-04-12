@@ -1,7 +1,6 @@
 html,
 body {
   width: 100%;
-  overflow-x: hidden;
 }
 body {
   background: #080d0f;
@@ -1238,5 +1237,12 @@ header a {
   section {
     padding-left: 30px !important;
     padding-right: 30px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    position: relative;
   }
 }
