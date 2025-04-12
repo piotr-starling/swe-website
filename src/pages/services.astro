@@ -9,7 +9,18 @@ import "../styles/main.css";
 <MainLayout title="Our Services">
   <!-- Hero Section -->
   <section id="services-hero">
-    <img src="assets/bg_estimate.svg" alt="bg" class="bg-estimate" />
+    <div class="bg-estimate">
+      <img 
+        src="assets/bg_estimate.svg" 
+        alt="bg" 
+        class="bg-estimate" 
+        width="1920"
+        height="1080"
+        loading="eager"
+        fetchpriority="high"
+        decoding="sync"
+      />
+    </div>
     <div class="container d-column">
       <span class="section-subtitle">What We Do</span>
       <BoxReveal
@@ -178,6 +189,21 @@ import "../styles/main.css";
     overflow: hidden;
     padding-top: 100px;
     padding-bottom: 100px;
+    /* Add explicit dimensions to reserve space */
+    min-height: 600px;
+    width: 100%;
+  }
+
+  .bg-estimate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure GPU acceleration */
+    transform: translateZ(0);
+    will-change: transform;
   }
 
   /* Ensure text content stays above the 3D animation */
