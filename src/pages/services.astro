@@ -210,11 +210,17 @@ import "../styles/main.css";
   }
 
   .ideal-for-box {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
     padding: 32px;
     margin-top: 48px;
+  }
+
+  .ideal-for-box h3 {
+    color: #49FFD7;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
   }
 
   .ideal-for-box ul {
@@ -224,9 +230,12 @@ import "../styles/main.css";
   }
 
   .ideal-for-box li {
-    margin: 12px 0;
-    padding-left: 24px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 16px 0;
+    padding-left: 28px;
     position: relative;
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
 
   .ideal-for-box li:before {
@@ -234,6 +243,11 @@ import "../styles/main.css";
     position: absolute;
     left: 0;
     color: #49FFD7;
+  }
+
+  .ideal-for-box .cta {
+    margin-top: 32px;
+    display: inline-block;
   }
 
   /* Engineering Support section styles */
@@ -250,19 +264,21 @@ import "../styles/main.css";
   }
 
   .model-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    padding: 24px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 32px;
     transition: transform 0.3s ease;
   }
 
   .model-card:hover {
     transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
   }
 
   .model-card h3 {
     color: #49FFD7;
+    font-size: 1.5rem;
     margin-bottom: 16px;
   }
 
@@ -272,7 +288,19 @@ import "../styles/main.css";
   }
 
   .model-card li {
-    margin: 8px 0;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 12px 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding-left: 24px;
+    position: relative;
+  }
+
+  .model-card li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #49FFD7;
   }
 
   /* Why SWE section styles */
@@ -291,11 +319,29 @@ import "../styles/main.css";
     display: flex;
     align-items: center;
     gap: 16px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .benefit-item:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.05);
   }
 
   .benefit-item img {
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
+  }
+
+  .benefit-item h3 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
   }
 
   @media (max-width: 768px) {
