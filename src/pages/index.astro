@@ -2,6 +2,7 @@
 // Astro will bundle and optimize this CSS for you automatically
 // This also works for preprocessor files like .scss, .styl, etc.
 import { BoxReveal } from "../components/magicui/box-reveal";
+import { TextAnimate } from "../components/magicui/text-animate";
 import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/main.css";
 ---
@@ -11,7 +12,11 @@ import "../styles/main.css";
     <img src="assets/bg_estimate.svg" alt="bg" class="bg-estimate" />
     <div class="container d-column">
       <span class="section-subtitle">Our mission</span>
-      <BoxReveal boxColor={"oklch(0.13 0.028 261.692)"} duration={0.5} client:load>
+      <BoxReveal
+        boxColor={"oklch(0.13 0.028 261.692)"}
+        duration={0.5}
+        client:load
+      >
         <h1>Expert engineering.</h1>
       </BoxReveal>
       <div class="d-flex container-full d-row g-150">
@@ -48,7 +53,13 @@ import "../styles/main.css";
     <img src="assets/bg.svg" class="image-bg" alt="bg" />
     <div class="container d-column">
       <span class="section-subtitle">What we do</span>
-      <h2 class="section-title">Featured services</h2>
+      <TextAnimate
+        animation="blurIn"
+        as="h1"
+        className="section-title"
+        client:only>Featured services</TextAnimate
+      >
+      <!-- <h2 class="section-title">Featured services</h2> -->
       <p>
         Discover our range of top-tier services tailored to meet your specific
         needs. Our team of experts is dedicated to delivering excellence in
@@ -102,7 +113,13 @@ import "../styles/main.css";
   <section id="process">
     <div class="container d-column">
       <span class="section-subtitle">Process</span>
-      <h2 class="section-title">How it works</h2>
+      <TextAnimate
+        animation="blurIn"
+        as="h1"
+        className="section-title"
+        client:only>How it works</TextAnimate
+      >
+      <!-- <h2 class="section-title">How it works</h2> -->
       <p>
         We've simplified the process to make your experience seamless. Discover
         the steps that lead to your success with us.
