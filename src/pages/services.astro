@@ -1,0 +1,297 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { BoxReveal } from "../components/magicui/box-reveal";
+import { TextAnimate } from "../components/magicui/text-animate";
+import "../styles/main.css";
+---
+
+<MainLayout title="Our Services">
+  <!-- Hero Section -->
+  <section id="services-hero">
+    <img src="assets/bg_estimate.svg" alt="bg" class="bg-estimate" />
+    <div class="container d-column">
+      <span class="section-subtitle">What We Do</span>
+      <BoxReveal
+        boxColor={"oklch(0.13 0.028 261.692)"}
+        duration={0.5}
+        client:load
+      >
+        <h1>Expert software delivery & engineering support.</h1>
+      </BoxReveal>
+      <div class="d-flex container-full d-row g-150">
+        <div class="column">
+          <p>
+            We help startups and product teams move fast — whether you're launching a new product or scaling what already works. SWE offers two flexible engagement models: <strong>full-cycle product delivery and high-quality engineering support</strong>. We'll help you figure out what fits best.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Delivery Section -->
+  <section id="product-delivery">
+    <img src="assets/bg.svg" class="image-bg" alt="bg" />
+    <div class="container d-column">
+      <span class="section-subtitle">Product Delivery</span>
+      <TextAnimate
+        animation="blurIn"
+        as="h2"
+        className="section-title"
+        client:only
+      >
+        From idea to launch
+      </TextAnimate>
+      <p>We lead your project through every phase — discovery, design, build, and scale.</p>
+      
+      <div class="d-flex container-full d-row g-32 mt-50">
+        {/* Service boxes similar to whatWeDo section */}
+        <div class="column service-box">
+          <div class="icon-box">
+            <img src="assets/brain.svg" alt="Discovery" />
+          </div>
+          <h3>Product Discovery</h3>
+          <p>Technical planning, UX/UI design, and architecture decisions that set you up for success.</p>
+        </div>
+
+        <div class="column service-box">
+          <div class="icon-box">
+            <img src="assets/code.svg" alt="Development" />
+          </div>
+          <h3>Full-stack Development</h3>
+          <p>Next.js, React, Node, TypeScript, and serverless infrastructure on AWS.</p>
+        </div>
+
+        <div class="column service-box">
+          <div class="icon-box">
+            <img src="assets/ai.svg" alt="AI" />
+          </div>
+          <h3>AI Integration</h3>
+          <p>OpenAI, vector search, and custom LLM applications to make your product smarter.</p>
+        </div>
+
+        <div class="column service-box">
+          <div class="icon-box">
+            <img src="assets/devops.svg" alt="DevOps" />
+          </div>
+          <h3>DevOps & Support</h3>
+          <p>CI/CD, observability setup, and post-launch iteration to keep you running smoothly.</p>
+        </div>
+      </div>
+
+      <div class="ideal-for-box mt-50">
+        <h3>Who it's for:</h3>
+        <ul>
+          <li>Founders with a product idea</li>
+          <li>Startups looking to build an MVP</li>
+          <li>Teams wanting to ship a new tool or internal system</li>
+          <li>Anyone needing fast, high-quality delivery without building an internal team</li>
+        </ul>
+        <a class="cta"><span>Have a product idea? Let's scope it out →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engineering Support Section -->
+  <section id="engineering-support">
+    <img src="assets/bg-about.svg" alt="bg" class="bg-about" />
+    <div class="container d-column">
+      <span class="section-subtitle">Engineering Support</span>
+      <TextAnimate
+        animation="blurIn"
+        as="h2"
+        className="section-title"
+        client:only
+      >
+        Extend your team
+      </TextAnimate>
+      <p>We embed experienced engineers directly into your team — full-time or part-time.</p>
+
+      <div class="engagement-models mt-50">
+        <div class="model-card">
+          <h3>Fixed-scope delivery</h3>
+          <ul>
+            <li>You bring the idea → we handle the rest</li>
+            <li>Milestone-based estimates</li>
+            <li>Ideal for MVPs and greenfield builds</li>
+          </ul>
+        </div>
+
+        <div class="model-card">
+          <h3>Rolling collaboration</h3>
+          <ul>
+            <li>Engineers join your team on an ongoing basis</li>
+            <li>Flexible weekly/monthly commitment</li>
+            <li>Ideal for post-MVP growth</li>
+          </ul>
+        </div>
+
+        <div class="model-card">
+          <h3>Hybrid model</h3>
+          <ul>
+            <li>Start with a scope, extend with a rolling team</li>
+            <li>Best of both worlds</li>
+            <li>Perfect for post-funding growth</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why SWE Section -->
+  <section id="why-swe">
+    <div class="container d-column">
+      <span class="section-subtitle">Why SWE?</span>
+      <h2 class="section-title">The SWE difference</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <img src="assets/check.svg" alt="check" />
+          <h3>Fast delivery without shortcuts</h3>
+        </div>
+        <div class="benefit-item">
+          <img src="assets/check.svg" alt="check" />
+          <h3>Modern tech, scalable architecture</h3>
+        </div>
+        <div class="benefit-item">
+          <img src="assets/check.svg" alt="check" />
+          <h3>Thoughtful engineers who actually care</h3>
+        </div>
+        <div class="benefit-item">
+          <img src="assets/check.svg" alt="check" />
+          <h3>AI expertise to build smarter products</h3>
+        </div>
+        <div class="benefit-item">
+          <img src="assets/check.svg" alt="check" />
+          <h3>Trusted by founders and large teams alike</h3>
+        </div>
+      </div>
+      <a class="cta"><span>Let's talk about your needs →</span></a>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  /* Hero section styles */
+  #services-hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+  }
+
+  /* Product Delivery section styles */
+  #product-delivery {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+  }
+
+  #product-delivery .image-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  #product-delivery .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .ideal-for-box {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 32px;
+    margin-top: 48px;
+  }
+
+  .ideal-for-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+  }
+
+  .ideal-for-box li {
+    margin: 12px 0;
+    padding-left: 24px;
+    position: relative;
+  }
+
+  .ideal-for-box li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #49FFD7;
+  }
+
+  /* Engineering Support section styles */
+  #engineering-support {
+    padding: 100px 0;
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .engagement-models {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .model-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 24px;
+    transition: transform 0.3s ease;
+  }
+
+  .model-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .model-card h3 {
+    color: #49FFD7;
+    margin-bottom: 16px;
+  }
+
+  .model-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .model-card li {
+    margin: 8px 0;
+  }
+
+  /* Why SWE section styles */
+  #why-swe {
+    padding: 100px 0;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin: 48px 0;
+  }
+
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .benefit-item img {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: 768px) {
+    .engagement-models {
+      grid-template-columns: 1fr;
+    }
+  }
+</style> 
