@@ -2,6 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import { BoxReveal } from "../components/magicui/box-reveal";
 import { TextAnimate } from "../components/magicui/text-animate";
+import { HeroAnimation } from "../components/HeroAnimation";
 import "../styles/main.css";
 ---
 
@@ -26,6 +27,7 @@ import "../styles/main.css";
         </div>
       </div>
     </div>
+    <HeroAnimation client:load />
   </section>
 
   <!-- Product Delivery Section -->
@@ -172,9 +174,16 @@ import "../styles/main.css";
 <style>
   /* Hero section styles */
   #services-hero {
+    position: relative;
+    overflow: hidden;
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  /* Ensure text content stays above the 3D animation */
+  #services-hero .container {
     position: relative;
+    z-index: 1;
   }
 
   /* Product Delivery section styles */
