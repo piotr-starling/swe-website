@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import "../styles/main.css";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
   title?: string;
@@ -15,6 +16,7 @@ const { title = "SWE" } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
+    <ClientRouter />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,17 +31,17 @@ const { title = "SWE" } = Astro.props;
         rel="stylesheet"
       />
     </noscript>
-    <link 
-      rel="preload" 
-      href="/assets/bg_estimate.svg" 
-      as="image" 
+    <link
+      rel="preload"
+      href="/assets/bg_estimate.svg"
+      as="image"
       type="image/svg+xml"
       fetchpriority="high"
     />
   </head>
   <body>
     <main>
-      <header>
+      <header transition:persist>
         <div class="header-background"></div>
         <div class="header-green"></div>
         <!--<img src="assets/green-item.png" alt="green-item" class="green-item" />-->
