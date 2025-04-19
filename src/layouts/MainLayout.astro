@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import "../styles/main.css";
 import { ClientRouter } from "astro:transitions";
+import { EstimateForm } from "../components/EstimateForm";
 
 interface Props {
   title?: string;
@@ -54,7 +55,7 @@ const { title = "SWE" } = Astro.props;
               <li><a href="/contact">Contact us</a></li>
             </ul>
             <div>
-              <a class="cta"><span>Get Estimate →</span></a>
+              <button id="estimateBtn" class="cta"><span>Get Estimate →</span></button>
               <img src="assets/menu.svg" alt="menu" class="menu" />
             </div>
           </div>
@@ -79,6 +80,7 @@ const { title = "SWE" } = Astro.props;
         </div>
       </header>
       <slot />
+      <EstimateForm client:load />
       <section id="newsletter">
         <div class="container d-column">
           <img src="assets/fav.svg" alt="logo" class="logo" />
@@ -171,5 +173,16 @@ const { title = "SWE" } = Astro.props;
         </script>
       </footer>
     </main>
+
+    <script>
+      let isModalOpen = false;
+      
+      document.querySelectorAll('.cta').forEach(button => {
+        button.addEventListener('click', () => {
+          isModalOpen = true;
+          document.dispatchEvent(new CustomEvent('toggleEstimateModal', { detail: { open: true } }));
+        });
+      });
+    </script>
   </body>
 </html>
